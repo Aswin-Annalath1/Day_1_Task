@@ -1,0 +1,37 @@
+1. Write a blog on Difference between HTTP1.1 vs HTTP2
+   
+   HTTP1.1 was introduced in 1997. It was introduced because the website was becoming more heavy and dynamic.In this period website became dynamic and more resources like images were used and more features were required. The HTTP 1.1 came with features like Keep-alive,CORS etc to make the internet faster and help clients to access the server faster. The keep-alive option enables re-using of the same TCP connection for multiple HTTP request in HTTP1.1 .There were also many problems with HTTP1.1 and only in 2015 the new version of HTTP 1.1  came after introducing in 1997. The major flaws in HTTP 1.1 were Head of line blocking , Repitition of header data and more focus on gzip , minifying, css/js , caching etc . So in HOL first only one TCP connection were able to make to access each file like html, js or cssfile. But later on HTTP 1.1 were able to make upto 6 TCP connection parallel.But even though 6 connection it was not enough because websites were huge and contained many datas.  
+
+  HTTP2 was introduced in 2015. HTTP2 is an HTTP1.1 connection with some additional features. In this one secured TCP connection is setup in which HTTP requests are transferred in form of streams. So this is faster and we no need to create many TCP connections . And the other major feature of HTTP2 is HPACK. It seperates the header data from request data and can be zipped .It also help to re-use header data which is repeated in every request. HPACK reduces HTTP request size. The PUSH frames is also a top feature of HTTP2 because it sends mandatory resources in advance with an HTTP response. Almost all the modern web servers support HTTP2.
+
+
+2.Write a blog about objects and its internal representation in Javascript
+
+  The object in java script is a composite datatype that represents a collection of key value pairs, where each key is a string and each value can be of any data type including other objects. Objects can be thought of as containers that hold repeated data and behavior. This flexible structure makes them an ideal choice for modeling real-world entities, such as users, products and more with in a program.In java script , objects can be created using two main approaches object literals and constructor functions.
+
+>>example:Object Literals:
+const person = {
+  name: 'Aswin',
+  age: 25,
+  profession: 'Web Developer'
+}; 
+
+>>example:Constructor Functions:
+function Person(name, age, profession) {
+  this.name = name;
+  this.age = age;
+  this.profession = profession;
+}
+
+const person = new Person('Aswin', 25, 'Web Developer');
+
+>>In java script each property in an object is associated with a property descriptor, which defines attributes such as whether the property is writable, enumerable, and configurable. This provides fine-grained control over how an object's properties can be accessed and modified.Object properties are mainly accessed using dot notation or square bracket notation
+
+>>Key components of a property descriptor include:
+
+Value: The value associated with the property.
+Writable: Determines whether the property's value can be changed.
+Enumerable: Indicates whether the property can be enumerated using a loop.
+Configurable: Specifies whether the property can be deleted and its attributes can be modified.
+
+>> In conclusion Objects are the building blocks of JavaScript, enabling developers to structure and manipulate data in a versatile and organized manner. Understanding the conceptual aspects of objects, along with their internal representation, is essential for object-oriented programming paradigm
